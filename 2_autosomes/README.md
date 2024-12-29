@@ -1,1 +1,1 @@
-# Extensive fission events have resulted in 227 small autosomes of a similar size
+# Section 2: Extensive fission events have resulted in 227 small autosomes of a similar size
