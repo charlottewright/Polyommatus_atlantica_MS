@@ -6,4 +6,4 @@ Contains the data needed to generate the length and gene distribution histograms
 
 [Z_chr](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome/Z_chr>)
 
-Contains the data needed to plot PacBio coverage per scaffold in the **P. atlantica** genome assembly shown in Supplementary Figure 1A.
+Contains the data needed to plot PacBio coverage per scaffold in the *P. atlantica* genome assembly shown in Supplementary Figure 1A.
