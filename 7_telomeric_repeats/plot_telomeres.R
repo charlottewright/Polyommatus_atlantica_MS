@@ -6,9 +6,6 @@ library(ape)
 library(phytools)
 
 # Aim: compare telomere prevalence and length in P. atlantica vs all other leps
-# NB: extra commands when I was first playing with the data can be found in this script:
-#"telomeres_from_TRF.R" 
-
 setwd('/Users/cw22/Documents/transfer_folder/GitHub_projects/polyommatus_atlantica/5_telomeres/')
 chr_IDs <- read.csv('list_of_all_chr_IDs.tsv', sep=' ') # this gives the scaffold IDs for the chr (i.e. allows you to filter out non-chr shrapnel)
 colnames(chr_IDs) <- c('chr', 'species')
