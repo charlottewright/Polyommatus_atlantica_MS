@@ -1,0 +1,13 @@
+Aricia_agestis	435280672
+Aricia_artaxerxes	458496882
+Celastrina_argiolus	499114119
+Cyaniris_semiargus	441519306
+Glaucopsyche_alexis	619543730
+Lycaena_phlaeas	420484551
+Lysandra_bellargus	528933758
+Lysandra_coridon	540734767
+Plebejus_argus	382108302
+Polyommatus_atlantica	658321023
+Polyommatus_icarus	511758028
+Polyommatus_iphigenia	39323955
+Phengaris_arion	544505416
