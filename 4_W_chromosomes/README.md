@@ -1,5 +1,8 @@
 # Section 4: The W chromosomes of *P. atlantica* are derived from copies of three autosomes that became sex-linked
 
+[alignments](<https://github.com/charlottewright/P_atlantica_genome/tree/main/4_W_chromosomes/alignments>)
+Code used to generate alignments of the W chromosomes to the other sequences in the genome of *P. atlantica*.
+
 [oxford_plot](<https://github.com/charlottewright/P_atlantica_genome/tree/main/4_W_chromosomes/oxford_plot>)
 
 Data and code needed to generate the oxford plot of Z chromosomes against the W chromosomes of *P. atlantica* shown in Figure 3B. Also includes the data needed to annotate the oxford plot with chromosome outlines with gene locations.
