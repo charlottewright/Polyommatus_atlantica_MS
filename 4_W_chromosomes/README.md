@@ -2,7 +2,7 @@
 
 [alignments](<https://github.com/charlottewright/P_atlantica_genome/tree/main/4_W_chromosomes/alignments>)
 
-Code used to generate alignments of the W chromosomes to the other sequences in the genome of *P. atlantica*.
+Code used to generate alignments of the W chromosomes to the other sequences in the genome of *P. atlantica*. Alignments are plotted using the pafr package in R using an R script (analyse_minimap2_alignments.R). 
 
 [oxford_plot](<https://github.com/charlottewright/P_atlantica_genome/tree/main/4_W_chromosomes/oxford_plot>)
 
