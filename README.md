@@ -6,7 +6,7 @@ This repository contains source code and data associated with this manuscript.
 Each subdirectory contains a README with descriptions of the files it contains.
 
 ## [1_genomes](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome>)
-Code and files related to the first results section ("A chromosome-level genome for P. atlantica consists of 229 pairs of chromosomes").
+Code and files related to the first results section ("A chromosome-level genome for *P. atlantica* consists of 229 pairs of chromosomes").
 
 ## [2_autosomes](<https://github.com/charlottewright/P_atlantica_genome/tree/main/2_autosomes>)
 Code and files related to the second results section ("Extensive fission events have resulted in 227 small autosomes of a similar size").
