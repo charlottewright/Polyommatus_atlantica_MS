@@ -1,0 +1,14 @@
+Species	Max depth	Genome size (Mb)	Number of heterozygous sites	Genome-wide heterozygosity	No. of short ROHs	No. of medium ROHs	No. of long ROHs	Sum of short ROHs (Mb)	Sum of medium ROHs (Mb)	Sum of long ROHs (Mb)	Genome occupied by ROHs (%)
+Aricia agestis	102	435.3	3558094	0.004209	373	13	0	6.6	2.37	0	2.06
+Aricia artaxerxes	53	458.5	921881	0.002089	119	94	36	9.87	36.24	96.66	31.14
+Celastrina argiolus	59	499.1	1319215	0.00286	118	47	0	9.05	12.39	0	4.3
+Cyaniris semiargus	85	441.5	1509656	0.003498	54	19	0	4.1	3.59	0	1.74
+Glaucopsyche alexis	77	619.5	1192391	0.001984	307	87	0	22.74	17.8	0	6.54
+Lycaena phlaeas	107	420.5	2875123	0.006892	51	35	5	4.03	8.27	8.13	4.86
+Lysandra bellargus	104	528.9	1593978	0.003271	161	32	0	11.9	7.17	0	3.61
+Lysandra coridon	93	540.7	1695282	0.003239	267	57	1	17.78	11.66	1.15	5.656
+Phengaris arion	286	544.5	483875	0.000951	261	203	29	19.6	68.92	81.08	31.15
+Plebejus argus	43	382.1	1494047	0.004301	58	21	0	3.78	4.21	0	2.09
+Polyommatus atlantica	68	658.3	1074732	0.002117	443	72	0	21.82	14.31	0	5.49
+Polyommatus icarus	66	511.8	1742675	0.003518	150	43	0	10.9	8.37	0	3.77
+Polyommatus iphigenia	89	39.3	623381	0.001181	309	187	3	28.86	51.7	3.26	213.15

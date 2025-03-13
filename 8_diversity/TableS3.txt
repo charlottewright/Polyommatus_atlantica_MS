@@ -1,0 +1,29 @@
+Species	Accession number for genome	Bioproject	SRA run for PacBio data	Reference 		
+Aricia agestis	GCA_905147365.1	PRJEB41901	ERR6544653	(Hayward et al. 2023)		
+Aricia artaxerxes	GCA_937612035.1	PRJEB52239	ERR9439488	(Ebdon et al. 2022)		
+Celastrina argiolus	GCA_905187575.2	PRJEB42086	ERR6558180	(Hayward et al. 2021)		
+Cyaniris semiargus	GCA_905187585.1	PRJEB42089	ERR6560795	(Lohse et al. 2023)		
+Glaucopsyche alexis	GCA_905404095.1	PRJEB43781	ERR6436366	(Hinojosa Galisteo et al. 2021)		
+Lycaena phlaeas	GCA_905333005.2	PRJEB43522	ERR6576321	(Lohse et al. 2021)		
+Lysandra bellargus	GCA_905333045.1	PRJEB43523	ERR6576322	(Lohse et al. 2022)		
+Lysandra coridon	GCA_905220515.1	PRJEB42939	ERR6576318	(Vila et al. 2023)		
+Phengaris arion	GCA_963565745.1	PRJEB65385	ERR11892476	(Meredith et al. 2024)		
+Plebejus argus	GCA_905404155.3	PRJEB43788	ERR6606789	(Hayward et al. 2022)		
+Polyommatus atlantica	This study	PRJEB50432	"ERR12736855, ERR10753933"	This study		
+Polyommatus icarus	GCA_937595015.1	PRJEB51265	ERR9081703	(Lohse et al. 2023)		
+Polyommatus iphigenia	GCA_963422495.1	PRJEB64749	ERR11809156			
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
