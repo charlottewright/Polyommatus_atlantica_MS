@@ -4,8 +4,10 @@ library(ggplot2)
 library(patchwork)
 library(ape)
 library(phytools)
+library(ggtree)
 
 # Aim: compare telomere prevalence and length in P. atlantica vs all other leps
+
 setwd('/Users/cw22/Documents/transfer_folder/GitHub_projects/polyommatus_atlantica/5_telomeres/')
 chr_IDs <- read.csv('list_of_all_chr_IDs.tsv', sep=' ') # this gives the scaffold IDs for the chr (i.e. allows you to filter out non-chr shrapnel)
 colnames(chr_IDs) <- c('chr', 'species')
@@ -76,8 +78,8 @@ hist_of_all_telos_pos <- ggplot(telos_filt, aes(x = position)) +
 
 # Plot a histogram of the span of all internal telomeres
 hist_of_span_of_internal_telos <- ggplot(telos_middle, aes(x = span)) +
-  geom_histogram(color = "#7FC29B", fill = "#7FC29B") + # did have binwidth=100 when didn't use logscale
-  labs(title = "Histogram of internal telomeric sequence span across all species", x = "Size of internal telomeric array (bases)", y = "Frequency") +
+  geom_histogram(fill = "#006E90") + # did have binwidth=100 when didn't use logscale
+  labs(title = "Histogram of internal telomeric sequence span across all species", x = "Size of internal telomeric array (bp)", y = "Frequency") +
   theme_bw() + scale_x_log10()
 # see that a few large ITS make x-axis huge but most ITS < 1000
 
@@ -217,12 +219,16 @@ telos_middle_lycaenids <- telos_middle %>% filter(species %in% lycaenid_spp)
 telos_middle_lycaenids$species <- as.factor(telos_middle_lycaenids$species)
 telos_middle_lycaenids$species <- factor(telos_middle_lycaenids$species, levels = lycaenid_spp)
 
-lycaenids_span_plot <- ggplot(telos_middle_lycaenids, aes(x=span)) + geom_histogram(binwidth =50, fill='#7FC29B') + 
-  facet_wrap(~species, ncol=1) + theme_bw() + theme(strip.text = element_blank()) +
-  xlim(0,4000) 
 
-lycaenids_span_plot <- ggplot(telos_middle_lycaenids, aes(x=span)) + geom_histogram(fill='#7FC29B') + 
-  facet_wrap(~species, ncol=1) + theme_bw() + theme(strip.text = element_blank()) +scale_x_log10()
+#lycaenids_span_plot <- ggplot(telos_middle_lycaenids, aes(x=span)) + geom_histogram(fill='#7FC29B') + 
+#  facet_wrap(~species, ncol=1) + theme_bw() + theme(strip.text = element_blank()) + xlim(0,4000)
+
+# use a log10 scale
+lycaenids_span_plot <- ggplot(telos_middle_lycaenids, aes(x=span)) + geom_histogram(fill='#006E90') + 
+  facet_wrap(~species, ncol=1) + theme_bw() + theme(strip.text = element_blank()) +  xlim(0,4000) +
+  theme(panel.border = element_blank())  + scale_x_log10() + 
+  labs(x='Length of internal telomeric repeat array (bp)',y='Count') +
+  theme(axis.text = element_text(colour = "black"))
 
 
 lycaenids_span_plot
@@ -234,9 +240,15 @@ telos_middle_lycaenids_long_ITS <- telos_middle_300bp_cutoff %>% filter(species 
 telos_middle_lycaenids_long_ITS$species <- as.factor(telos_middle_lycaenids_long_ITS$species)
 telos_middle_lycaenids_long_ITS$species <- factor(telos_middle_lycaenids_long_ITS$species, levels = lycaenid_spp)
 
+#lycaenids_300bp_pos_plot <- ggplot(telos_middle_lycaenids_long_ITS, aes(x=position)) + 
+#  geom_histogram(fill='#7FC29B') + 
+#  facet_wrap(~species, ncol=1) + theme_bw() + theme(strip.text = element_blank()) 
+
 lycaenids_300bp_pos_plot <- ggplot(telos_middle_lycaenids_long_ITS, aes(x=position)) + 
-  geom_histogram(fill='#7FC29B') + 
-  facet_wrap(~species, ncol=1) + theme_bw() + theme(strip.text = element_blank()) 
+  geom_histogram(fill='black') + labs(x='Proportional position',y='Count') +
+  facet_wrap(~species, ncol=1) + theme_bw() + theme(strip.text = element_blank()) +
+  theme(axis.text = element_text(colour = "black"))
+
 
 combined_plot <- lycaenids_span_plot + lycaenids_300bp_pos_plot
 
@@ -283,9 +295,11 @@ transposons$prop_stop <- transposons$stop / transposons$length
 transposons_filt <- transposons %>% filter(chr %in% c('SUPER_1','SUPER_2','SUPER_3','SUPER_4', 'SUPER_5', 'SUPER_Z1', 'SUPER_Z2'))
 
 # plot as function of proportional length instead to allow autosomes+sex chr to be plotted together
-plot_colours <- c('#BC4749','#7FC29B', '#586994','#DB9D47')
+# was #7FC29B (teal) for middle previously  and 586994 for SART (purple) and '#DB9D47' for TRAS
+
+plot_colours <- c('#DDCC77','#006E90','#117733', '#AA4499')
 telomere_plus_retrotransposons_paint <- ggplot(data=test) + 
-  geom_rect(aes(xmin=0, xmax=1, ymax=0, ymin =6), colour="black", fill="white") + 
+  geom_rect(aes(xmin=0, xmax=1, ymax=0, ymin =6), colour="darkgrey", fill="white") + 
   geom_rect(aes(xmin=prop_start-0.001, xmax=prop_stop+0.001, ymax=0, ymin =6, fill=type)) + 
   facet_wrap(chr ~., ncol=1, strip.position="right") + guides(scale="none") + 
   scale_fill_manual(values=plot_colours) +
@@ -306,16 +320,37 @@ species_count_small <- as.data.frame(species_count_small)
 colnames(species_count_small) <- c("Species", "Count")
 species_count_small$type <- 'small'
 species_count_300bp_df$type <- 'large'
-test <- rbind(species_count_small,species_count_300bp_df)
+species_count_small_and_large <- rbind(species_count_small,species_count_300bp_df)
 
 col_palette <- c('black', 'darkgrey')
-hist_num_ITS_per_spp <- ggplot(test, aes(x=Count, fill=type)) + geom_histogram() +  ggtitle('B') + theme(plot.title = element_text(face = "bold")) +
+hist_num_ITS_per_spp <- ggplot(species_count_small_and_large, aes(x=Count, fill=type)) + geom_histogram() +  ggtitle('B') + theme(plot.title = element_text(face = "bold")) +
   theme_bw() + labs(x="Number of internal telomeric arrays", y="Species count") + scale_x_log10() +
-  scale_fill_manual(values=col_palette)
+  scale_fill_manual(values=col_palette) + 
+  geom_vline(xintercept = 292, color = "darkgrey", linetype = "dashed", size = 1) + # number of small ITS in P. atlantica
+  geom_vline(xintercept = 435, color = "black", linetype = "dashed", size = 1) # number of large ITS in P. atlantica
 
+hist_num_ITS_per_spp
 B_and_C <- hist_num_ITS_per_spp +theme(plot.title=element_blank()) + hist_of_span_of_internal_telos + theme(plot.title=element_blank()) +plot_layout(nrow=2)
 B_and_C
 fig_on_P_atlantica_plus_all_leps_summary <- telomere_plus_retrotransposons_paint + B_and_C 
+fig_on_P_atlantica_plus_all_leps_summary
+
+ggsave(fig_on_P_atlantica_plus_all_leps_summary, filename='telomere_paint_with_retrotransposons_plus_summary_all_leps.log10scale.250225.pdf',width=10, height=6)
+
+design <- "AAB
+           AAC
+           DEF
+           DEF"
+
+final_fig <- telomere_plus_retrotransposons_paint + hist_num_ITS_per_spp +
+  theme(plot.title=element_blank()) + hist_of_span_of_internal_telos + 
+  theme(plot.title=element_blank()) + cladogram_plot +
+  lycaenids_span_plot + lycaenids_300bp_pos_plot +
+  plot_layout(design = design, guides='collect') 
+final_fig 
+
+ggsave(final_fig, filename='Fig5_telomeres.090325.pdf', width=10,height=10)
+
 fig_on_P_atlantica_plus_all_leps_summary
 
 ggsave(fig_on_P_atlantica_plus_all_leps_summary, filename='telomere_paint_with_retrotransposons_plus_summary_all_leps.log10scale.pdf',width=10, height=6)
