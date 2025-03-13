@@ -1,5 +1,9 @@
 # Section 6: Fissions occur in the A compartment and do not act to maintain clusters of functionally-related genes
 
+[compartments](<https://github.com/charlottewright/P_atlantica_genome/tree/main/6_fissions/compartments/>)
+
+Data needed to generate the Hi-C plotted annotated with the locations of various features, as shown in Figure 4A, and to estimate the overlap between compartment types and breakpoints, as shown in Figure S6.
+
 [gene_enrichment](<https://github.com/charlottewright/P_atlantica_genome/tree/main/6_fissions/gene_enrichment>)
 
 Code needed to test for gene enrichment per observed and simulated block of genes.
