@@ -156,8 +156,6 @@ paint_merians_all <- function(spp_df, num_col, title, karyotype){
 
 complete_locations <- 'Polyommatus_icarus_complete_location.tsv'
 duplicated_locations <- 'Polyommatus_icarus_duplicated_location.tsv'
-#complete_locations <- 'Polyommatus_icarus.female_complete_location.tsv'
-#duplicated_locations <- 'Polyommatus_icarus.female_duplicated_location.tsv'
 prefix <- 'P. icarus'
 
 index <- 'Polyommatus_icarus.fa.fai'
@@ -165,8 +163,6 @@ minimum <- 5
 ncol = 1
 
 location_set <- prepare_data_with_index(complete_locations, index)
-#location_set_dups <- prepare_data_with_index(duplicated_locations, index)
-#location_set <- rbind(location_set, location_set_dups)
 locations_filt <- filter_buscos(location_set, minimum) 
 num_contigs <- as.character(length(unique(locations_filt$query_chr))) # number of query_chr after filtering
 num_col <- 1
@@ -190,10 +186,8 @@ EE
 EE
 "
 
-
 supfig_plot <- cov_plot + repeats_plot + sex_chr_windows_P_atlantica_plot + sex_chr_Picarus_plot + picarus_merian_plot + plot_layout(guides = 'collect', design=layout)
 supfig_plot
-
 
 
 # plot full SupFig of just Merians associated with sex chr in P. atlantica (complete and duplicated loci) and coverage plot 
