@@ -28,10 +28,8 @@ P_atlantica_HOX_filt$percent_identity <- as.integer(P_atlantica_HOX_filt$percent
 P_atlantica_HOX_filt <- P_atlantica_HOX_filt %>% filter(percent_identity > 55)
 # remove duplicate of Ubx which has lower identity
 P_atlantica_HOX_filt <- subset(P_atlantica_HOX_filt, !(gene == "Ubx" & percent_identity < 100))
-# both Ro and Pb have two hits with 100% which are very close to eachother
-# same pattern is seen in L. coridon
-# Mulhair et al only found one copy in L.coridon
-# so P_atlantica_HOX_filt one copy of each should be filtered out.
+# both Ro and Pb have two hits with 100% which are very close to eachother - due to being two exons of same gene (checked based on size of intron)
+# so lets filter to just keep one exon per gene
 P_atlantica_HOX_filt <- P_atlantica_HOX_filt %>%
   filter(!(gene == 'Ro' & start == 997098)) %>%
   filter(!(gene == 'Pb' & start == 1281769))
@@ -40,10 +38,8 @@ P_atlantica_HOX_filt <- P_atlantica_HOX_filt %>%
 P_icarus_HOX_filt <- P_icarus_HOX_filt %>% filter(percent_identity > 55)
 # remove duplicate of Ubx which has lower identity
 P_icarus_HOX_filt <- subset(P_icarus_HOX_filt, !(gene == "Ubx" & percent_identity < 100))
-# both Ro and Pb have two hits with 100% which are very close to eachother
-# same pattern is seen in L. coridon
-# Mulhair et al only found one copy in L.coridon
-# so suggests one copy of each should be filtered out.
+# both Ro and Pb have two hits with 100% which are very close to eachother - due to being two exons of same gene (checked based on size of intron)
+# so lets filter to just keep one exon per gene
 P_icarus_HOX_filt <- P_icarus_HOX_filt %>%
   filter(!(gene == 'Ro' & start == 13403711)) %>%
   filter(!(gene == 'Pb' & start == 13162450))
