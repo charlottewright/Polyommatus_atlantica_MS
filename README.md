@@ -5,6 +5,8 @@ This repository contains source code and data associated with this manuscript.
 
 Each subdirectory contains a README with descriptions of the files it contains.
 
+The scripts require the following R packages: `ggplot2`, `patchwork`, `dplyr`, `ggsignif`, `ggpubr`.
+
 ## [1_genomes](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome>)
 Code and files related to the first results section ("A chromosome-level genome for *P. atlantica* consists of 229 pairs of chromosomes").
 
