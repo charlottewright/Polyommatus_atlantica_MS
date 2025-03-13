@@ -2,7 +2,7 @@
 
 [P_atlantica](<https://github.com/charlottewright/P_atlantica_genome/tree/main/7_telomeric_repeats/P_atlantica>)
 
-Data needed to plot *P. atlantica* chromosome outlines annotated with positions of telomeric repeats and positions of TRAS and SART retrotransposons shown in Figure 5A.
+Data needed to plot *P. atlantica* chromosome outlines annotated with positions of telomeric repeats and positions of TRAS and SART retrotransposons shown in Figure 5A. This data is plotted using an R script (plot_telomeres.R).
 
 [all_lepidoptera](<https://github.com/charlottewright/P_atlantica_genome/tree/main/7_telomeric_repeats/all_lepidoptera>)
 
