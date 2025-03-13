@@ -6,4 +6,8 @@ Data needed to plot *P. atlantica* chromosome outlines annotated with positions 
 
 [all_lepidoptera](<https://github.com/charlottewright/P_atlantica_genome/tree/main/7_telomeric_repeats/all_lepidoptera>)
 
-Data needed to plot the distribution of telomeric repeats across 532 species of Lepidoptera shown in Figure 5B,5C, and 5E and to plot the span of internal telomeric arrays in Lycaenidae next to the phylogeny of Lycaenidae shown in Figure 5D.
+Data needed to plot the distribution of telomeric repeats across 532 species of Lepidoptera shown in Figure 5B,5C, and 5E and to plot the span of internal telomeric arrays in Lycaenidae next to the phylogeny of Lycaenidae shown in Figure 5D. This data is plotted using an R script (plot_telomeres.R).
+
+[high_telomere_count_paints](<https://github.com/charlottewright/P_atlantica_genome/tree/main/7_telomeric_repeats/high_telomere_count_paints>)
+
+Data needed to plot the distribution of BUSCOs assigned to Merian elements across two species which displayed a high number of internal telomeric repeats (*Polyommatus iphigenia* and *Chrysodeixis includens*). This data is plotted using an R script (busco_paint_spp_with_many_internal_telomeric_repeats.R).
