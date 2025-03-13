@@ -7,6 +7,10 @@ Each subdirectory contains a README with descriptions of the files it contains.
 
 The scripts require the following R packages: `ggplot2`, `patchwork`, `dplyr`, `ggsignif`, `ggpubr`.
 
+The scripts were writted using R version 4.4.2 and Python version 3.10.8.
+
+
+
 ## [1_genomes](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome>)
 Code and files related to the first results section ("A chromosome-level genome for *P. atlantica* consists of 229 pairs of chromosomes").
 
