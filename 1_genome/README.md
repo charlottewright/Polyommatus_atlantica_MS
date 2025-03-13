@@ -2,7 +2,7 @@
 
 [length_and_genes](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome/length_and_genes>)
 
-Contains the code and data needed to generate the length and gene distribution histograms shown in Figure 1B and 1C.
+Contains the code and data needed to generate the length and gene distribution histograms shown in Figure 1B and 1C. These are plotted using an R script (plot_merians_vs_repeat_density.R)
 
 [repeat_landscape](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome/repeat_landscape>)
 
