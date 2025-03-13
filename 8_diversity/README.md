@@ -2,7 +2,7 @@
 
 [heterozygosity](<https://github.com/charlottewright/P_atlantica_genome/upload/main/8_diversity/heterozygosity>)
 
-Data needed to plot genome-wide heterozygosity per species of Lycaenidae shown in Figure 6A. This data is plotted using an R script (plot_ROH_and_heterozygosity.R). 
+Code needed to perform quality-control on the variants (QC_variants.R) and generate the plots of depth, PHRED_quality scores, and variant allele frequency for each SNP displayed in Figure S9. Also contains the data needed to plot genome-wide heterozygosity per species of Lycaenidae shown in Figure 6A. This data is plotted using an R script (plot_ROH_and_heterozygosity.R). 
 
 [runs_of_homozygosity](<https://github.com/charlottewright/P_atlantica_genome/tree/main/8_diversity/runs_of_homozygosity>)
 
