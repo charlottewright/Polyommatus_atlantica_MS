@@ -55,7 +55,7 @@ setwd("/Users/cw22/Documents/transfer_folder/GitHub_projects/polyommatus_atlanti
 repeat_types = c('LINE', 'SINE', 'DNA', 'RC', 'LTR', 'Repeats')
 
 # Read in Polyommatus atlantica (currently using ilPolAtla version 3)
-file_dir = 'temp_old_ilPolAtla/'
+file_dir = './'
 file_prefix <- 'repeat_density_of_random_regions_10000_Cyaniris_semiargus.filtered'
 ilPolAtal_v3_random_df <- read_and_combine_random_files(file_dir, file_prefix, repeat_types)
 file_prefix <- 'repeat_density_of_ilPolAtal1_v3_vs_ilCyaSemi_breakpoints_noZchr_040124.tsv_Cyaniris_semiargus.filtered'
