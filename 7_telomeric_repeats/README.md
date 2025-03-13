@@ -14,5 +14,5 @@ Data needed to plot the distribution of BUSCOs assigned to Merian elements acros
 
 [lycaenidae_phylogeny](<https://github.com/charlottewright/P_atlantica_genome/tree/main/7_telomeric_repeats/lycaenidae_phylogeny>)
 
-Contains the concatenated alignment (supermatrix.fa) and the resulting newick file (derived from IQ-TREE) associated with the Lycaenidae phylogeny shown in Figure 5E.
+Contains the newick file (derived from IQ-TREE) for the Lycaenidae phylogeny shown in Figure 5E.
 
