@@ -10,4 +10,4 @@ Data and code needed to generate the oxford plot of Z chromosomes against the W 
 
 [divergence](<https://github.com/charlottewright/P_atlantica_genome/tree/main/4_W_chromosomes/divergence>)
 
-Data needed to plot the synonymous divergence between the W and Z chromosomes of *P. atlantica* in Figure 3C and 3D as well as Figure S3B. This data is plotted using an R script (plot_dS_distribution_Ws_vs_Zs.R).
+Data needed to plot the synonymous divergence between the W and Z chromosomes of *P. atlantica* in Figure 3C and 3D as well as Figure S3B, S4A-D. This data is plotted using an R script (plot_dS_distribution_Ws_vs_Zs.R).
