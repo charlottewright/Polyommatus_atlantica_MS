@@ -6,7 +6,7 @@ Contains the code and data needed to generate the length and gene distribution h
 
 [repeat_landscape](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome/repeat_landscape>)
 
-Contains the code and data needed to generate the repeat landscape plots for *P. atlantica* and *P. icarus* shown in Figure 1D.
+Contains the code and data needed to generate the repeat landscape plots for *P. atlantica* and *P. icarus* shown in Figure 1D. These are plotted using an R script (plot_repeat_divergence.R).
 
 [Z_chr](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome/Z_chr>)
 
