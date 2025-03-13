@@ -6,7 +6,7 @@ Code used to generate alignments of the W chromosomes to the other sequences in 
 
 [oxford_plot](<https://github.com/charlottewright/P_atlantica_genome/tree/main/4_W_chromosomes/oxford_plot>)
 
-Data and code needed to generate the oxford plot of Z chromosomes against the W chromosomes of *P. atlantica* shown in Figure 3B. Also includes the data needed to annotate the oxford plot with chromosome outlines with gene locations.
+Data and code needed to generate the oxford plot of Z chromosomes against the W chromosomes of *P. atlantica* shown in Figure 3B. Also includes the data needed to annotate the oxford plot with chromosome outlines with gene locations. These data are plotted using an R script (oxford_plots_sex_chr_by_facetting.R.)
 
 [divergence](<https://github.com/charlottewright/P_atlantica_genome/tree/main/4_W_chromosomes/divergence>)
 
