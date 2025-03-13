@@ -2,7 +2,7 @@
 
 [synteny](<https://github.com/charlottewright/P_atlantica_genome/tree/main/2_autosomes/synteny>)
 
-Contains the data needed to generate the synteny plot shown in Figure 2A.
+Contains the data needed to generate the synteny plot shown in Figure 2A. These are plotted using an R script (make_synteny_ribbon_plot_for_one_P_icarus_chr.R). 
 
 [fission_length](<https://github.com/charlottewright/P_atlantica_genome/tree/main/2_autosomes/fission_length>)
 
