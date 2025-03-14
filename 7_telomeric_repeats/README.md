@@ -10,7 +10,7 @@ Data needed to plot the distribution of telomeric repeats across 532 species of 
 
 [high_telomere_count_paints](<https://github.com/charlottewright/P_atlantica_genome/tree/main/7_telomeric_repeats/high_telomere_count_paints>)
 
-Data needed to plot the distribution of BUSCOs assigned to Merian elements across two species which displayed a high number of internal telomeric repeats (*Polyommatus iphigenia* and *Chrysodeixis includens*). This data is plotted using an R script (busco_paint_spp_with_many_internal_telomeric_repeats.R).
+Data needed to plot the distribution of BUSCOs assigned to Merian elements across two species which displayed a high number of internal telomeric repeats (*Polyommatus iphigenia* and *Chrysodeixis includens*). This data was used to generate Figure S7 using an R script (busco_paint_spp_with_many_internal_telomeric_repeats.R).
 
 [lycaenidae_phylogeny](<https://github.com/charlottewright/P_atlantica_genome/tree/main/7_telomeric_repeats/lycaenidae_phylogeny>)
 
