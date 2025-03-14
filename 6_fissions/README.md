@@ -6,11 +6,11 @@ Data needed to generate the Hi-C plotted annotated with the locations of various
 
 [gene_enrichment](<https://github.com/charlottewright/P_atlantica_genome/tree/main/6_fissions/gene_enrichment>)
 
-Code needed to test for gene enrichment per observed and simulated block of genes.
+Code needed to test for gene enrichment per observed and simulated block of genes. Data is plotted using an R script (plot_simulated_gene_enrichment_results.R).
 
 [repeat_enrichment](<https://github.com/charlottewright/P_atlantica_genome/tree/main/6_fissions/repeat_enrichment/>)
 
-Data needed to plot the observed distribution of repeat density in breakpoints compared to simulated repeat densities under a random model.
+Code and data needed to plot the observed distribution of repeat density in breakpoints compared to simulated repeat densities under a random model. Figure S5 was generated using an R script (compare_repeat_density_random_vs_observed_regions.R). This folder also contains the results of using the package regioner to test for overlap between breakpoints and repeats.
 
 [hox_genes](<https://github.com/charlottewright/P_atlantica_genome/tree/main/6_fissions/hox_genes/>)
 
