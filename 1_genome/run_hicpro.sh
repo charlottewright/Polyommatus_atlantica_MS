@@ -1,0 +1,13 @@
+nextflow run ~/polyommatus_atlantica/Scripts/HiC_pro/hic \
+      --input 'C_semiargus_spreadsheet.csv' \
+      --fasta '../../../../Raw_data/genomes/core_dataset/Cyaniris_semiargus.fa' \
+      --digestion 'arimaV2' \
+      --hicpro_maps \
+      --bin_size '1000,2000,5000,10000,20000,40000,50000,60000,80000,100000,150000,200000' \
+      --res_compartments '40000,100000' --res_tads '2000,5000' \
+      --split_fastq \
+      --save_raw_maps \
+      --outdir './hic_pro_output' \
+      -w 'tmp' \
+      -profile sanger,singularity \
+      -name 'Cyaniris_semiargus'
