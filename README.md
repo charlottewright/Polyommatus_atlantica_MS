@@ -1,4 +1,4 @@
-## Code, data and plots associated with "The 229 chromosomes of the Atlas blue butterfly *Polyommatus atlantica* reveal rules constraining chromosome evolution in Lepidoptera"
+## Code, data and plots associated with "The 229 chromosomes of the Atlas blue butterfly *Polyommatus atlantica* reveal constraints on chromosome evolution"
 *Charlotte Wright, Blaxter lab, Tree of Life, Wellcome Sanger Institute*
 
 This repository contains source code and data associated with this manuscript.
