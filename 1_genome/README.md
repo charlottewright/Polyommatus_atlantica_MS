@@ -12,4 +12,6 @@ Contains the code and data needed to generate the repeat landscape plots for *P.
 
 Contains the code and data needed to plot PacBio coverage and repeat density per scaffold, and along selected chromosomes, in the *P. atlantica* genome assembly shown in Figure S1A, S1B and S1C. Also contains the data needed to plot PacBio coverage along the chromosomes of *P. icarus* as shown in Figure S1D. These are plotted using an R script (plot_coverage_and_repeat_density.R)
 
+[gene_annotation_files](<https://github.com/charlottewright/P_atlantica_genome/tree/main/1_genome/gene_annotation_files>)
 
+Contains the gene annotation files for *Polyommatus atlantica* and *Polyommatus icarus* that were generated using BRAKER3 with protein and RNA-seq data.
