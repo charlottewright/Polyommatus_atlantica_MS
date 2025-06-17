@@ -1,0 +1,14 @@
+GO.ID	Term	Annotated	Significant	Expected	Rank in classicFisher	classicFisher	elimFisher	topgoFisher	parentchildFisher
+GO:0015074	DNA integration	48	33	4.97	1	1.6e-22	1.6e-22	1.6e-22	3.1e-08
+GO:0000723	telomere maintenance	7	6	0.72	15	7.5e-06	7.5e-06	7.5e-06	0.01316
+GO:0005991	trehalose metabolic process	7	6	0.72	16	7.5e-06	7.5e-06	7.5e-06	1.00000
+GO:0006370	7-methylguanosine mRNA capping	9	6	0.93	22	7.5e-05	7.5e-05	7.5e-05	0.00072
+GO:0051603	proteolysis involved in protein cataboli...	38	10	3.94	38	0.00410	0.00410	0.0010	0.00015
+GO:0046034	ATP metabolic process	14	4	1.45	68	0.04883	0.04883	0.0094	0.08857
+GO:0006281	DNA repair	44	11	4.56	37	0.00408	0.00408	0.0107	0.99059
+GO:0006888	endoplasmic reticulum to Golgi vesicle-m...	10	4	1.04	51	0.01428	0.01428	0.0143	0.00917
+GO:0006807	nitrogen compound metabolic process	1395	196	144.46	10	1.5e-10	0.02348	0.0145	0.00553
+GO:0006355	regulation of DNA-templated transcriptio...	183	28	18.95	59	0.01977	0.01977	0.0223	0.97893
+GO:0006351	DNA-templated transcription	238	43	24.65	23	0.00011	0.00011	0.0228	0.08411
+GO:0006367	transcription initiation at RNA polymera...	8	3	0.83	66	0.04148	0.04148	0.0415	0.14612
+GO:0006457	protein folding	14	4	1.45	69	0.04883	0.04883	0.0488	0.06156
